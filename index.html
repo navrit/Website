@@ -1,41 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="last-modified" content="2015-05-06 15:09 PDT" />
-	<meta name="copyright" content="© 2015 Navrit Bal" />
-	<meta name="author" content="Navrit Bal" />
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-	<meta name="googlebot" content="snippet,follow" />
-	<meta name="robots" content="index,follow" />
+	<!-- CSS -->
 	<link rel="stylesheet" href="main.css" type="text/css">
-	<title> navrit.com </title>
-
-	<nav class="navbar navbar-fixed-top">
-		<div class="container">
-			<ol class="breadcrumb">
-				<li>
-					<a	href="http://navrit.com">
-						<b>Navrit Bal</b>
-					</a>
-				</li>
-				<li>
-					<a	href="about.html">
-						About
-					</a>
-				</li>
-				<li class="active">
-					<a	href="academic.html">
-						Academic
-					</a>
-				</li>
-			</ol>
-		</div>
-	</nav>
-
 </head>
 <body>
-
+<div id="header"></div>
 <div>
 	<div class="row ">
 		<div class="col-xs-12 col-s-12 col-md-12 col-lg-12">
@@ -43,12 +13,13 @@
 			<div class="panel panel-primary tile"
 				 id = "shadow">
 				<div class="panel-heading">
-					<h3 class="panel-title">Some random shit</h3>
+					<h3 class="panel-title">This is my personal website</h3>
 				</div>
 				<div>
 					<ul class="list-group">
 						<li class="list-group-item">
-							Blah blah blah
+							I've included some of my various projects.
+							Enjoy!
 						</li>
 					</ul>
 				</div>
@@ -57,53 +28,14 @@
 	</div>
 </div>
 
+<div id="footer"></div>
 </body>
-
-<footer class="footer">
-	<nav class="navbar navbar-static-bottom">
-		<div class="container">
-			<ol class="breadcrumb">
-				<li>
-					<a href="mailto:me@navrit.com">
-						<img 	src="images/mailicon.png"
-								alt="Mail" class="button">
-					</a>
-				</li>
-				<li>
-					<a href="http://linkedin.com/in/navritbal">
-						<img 	src="images/linkedinicon_white.png"
-								alt="Mail" class="button">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.facebook.com/navlord">
-						<img 	src="images/fbicon_white.png"
-								alt="Facebook" class="button">
-					</a>
-				</li>
-				<li>
-					<a href="https://plus.google.com/u/0/+NavritBal/posts">
-						<img 	src="images/gplus_white.png" style="height:28px"
-								alt="Google Plus" class="button">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/channel/UChfcNYWmxMTF2EQKtn-QKRQ">
-						<img 	src="images/youtubeicon_white.png"
-								alt="YouTube Channel" class="button">
-					</a>
-				</li>
-
-				<span class="label label-default">
-					&copy; 2015 NAVRIT BAL
-				</span>						
-			</ol>
-		</div>
-	</nav>
-	
-</footer>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script>
+		$("#header").load("header.html");
+		$("#footer").load("footer.html");
+	</script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 </html>
