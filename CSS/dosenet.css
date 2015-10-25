@@ -3,15 +3,34 @@ body {
   margin: 20px auto;
   margin-bottom: 0px;
   background-color: #CCCCCC;
-  background-image: url("images/GreyBlueBG210215.png");
+  background-image: url("../images/GreyBlueBG210215.png");
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center; }
 
+/*-------FOOTER-----------*/
+footer {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 1; }
+
+ol.breadcrumb {
+  margin-bottom: 0 !important;
+  box-shadow: 1px 2px 10px #999999; }
+
+span.label-default {
+  margin-left: 10px; }
+
+nav.navbar-static-bottom {
+  margin-top: 2em;
+  margin-bottom: 0; }
+
+ul.list-group {
+  margin-bottom: 0px; }
+
 img {
   /* Social buttons/images */ }
-  img.logo-dosenet {
-    margin: 4em 0 0 2em; }
   img.button:hover {
     opacity: 1;
     filter: alpha(opacity=100);
@@ -22,25 +41,33 @@ img {
     /* For IE8 and earlier shit*/
     height: 32px; }
 
-/*-------FOOTER-----------*/
-footer {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  z-index: 1; }
-
-span.label-default {
-  margin-left: 10px; }
+img.logo-dosenet {
+  margin: 4em 0 -0.3% 0.5%;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #CED1D4;
+  box-shadow: 2px 2px 8px #888888; }
 
 div.jumbotron {
   margin: 1%;
   border-radius: 10px; }
 div.gmnoprint, div.gm-style-cc {
   visibility: hidden; }
+div.h5 {
+  padding: 0.5em 0 0 0;
+  font-size: 2em;
+  text-align: center; }
+div.h2 {
+  font-size: 3em; }
+div.p {
+  padding: 1vw;
+  font-size: 1.2em;
+  text-align: center; }
 
-#main-area {
-  background-image: none;
-  background: gray; }
+button.btn, button.btn-info, button.btn-sm {
+  font-size: 1.1em; }
 
 #map-canvas {
   width: 99%;
@@ -51,19 +78,6 @@ div.gmnoprint, div.gm-style-cc {
   padding: 0.5em;
   margin-left: 1em;
   width: 100%; }
-
-.jh5 {
-  padding: 0.5em 0 0 0;
-  font-size: 2em;
-  text-align: center; }
-
-.jh2 {
-  font-size: 3em; }
-
-.jp {
-  padding: 1vw;
-  font-size: 1.2em;
-  text-align: center; }
 
 .header-text {
   font-size: 2vw;
@@ -103,7 +117,8 @@ div.gmnoprint, div.gm-style-cc {
   padding: 0.5em;
   border: 2px solid;
   border-color: #CED1D4;
-  margin: 0.5%; }
+  margin: 0 0.5% 0.5% 0.5%;
+  box-shadow: 2px 2px 8px #888888; }
 
 .paddingtop {
   padding-top: 1em; }
@@ -111,6 +126,7 @@ div.gmnoprint, div.gm-style-cc {
 .paddingright {
   padding-right: 1em; }
 
+/*-------- LABELS ON GMAP ----------*/
 .labels {
   background-color: #ffffff;
   -moz-border-radius: 5px;
