@@ -11,7 +11,7 @@
 <title> navrit.com </title>
 <!-- Navigation bar at top of page -->
 <nav class="navbar navbar-fixed-top">
-    <div class="container">
+    <div class="container-fluid">
         <ol class="breadcrumb">
             <li>
                 <a	href="http://navrit.com">
@@ -23,10 +23,12 @@
                     About
                 </a>
             </li>
-            <li>
-                <a	href="academic.html">
-                    Academic
-                </a>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Academic <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="academic.html">Main page</a></li>
+                    <li><a href="dosenet.html">DoseNet</a></li>
+              </ul>
             </li>
         </ol>
     </div>
