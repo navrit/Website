@@ -19,7 +19,8 @@ footer {
   width: 100%;
   height: auto;
   text-align: center;
-  z-index: 1; }
+  z-index: 1;
+  margin-top: 3em; }
 
 ol.breadcrumb {
   margin-bottom: 0 !important;
@@ -60,7 +61,7 @@ div.jumbotron {
   margin: 1%;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 2px 2px 8px #444444; }
+  box-shadow: 2px 2px 8px #888888; }
 div.gmnoprint, div.gm-style-cc {
   visibility: hidden; }
 div.h5 {
