@@ -2,12 +2,12 @@
 
 img {
     &.logo-dosenet {
-        margin:             4em 0 -0.3% 0.5%;
+        margin:             4em 0 -0.1% 0.5%;
         padding:            1em;
         background-color:   rgba(255,255,255,0.6);
         border-radius:      10px;
         border:             2px solid;
-        border-color:       #CED1D4;
+        border-color:       #B8EDE4;
         box-shadow:         2px 2px 8px #888888;
     }
 }
@@ -16,6 +16,8 @@ div {
     &.jumbotron{
         margin:         1%;
         border-radius:  10px;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow:         2px 2px 8px #888888;
     }
     &.gmnoprint, &.gm-style-cc {
         visibility: hidden;
@@ -90,7 +92,7 @@ button {
     border-radius:      10px;
     padding:            0.5em;
     border:             2px solid;
-    border-color:       #CED1D4;
+    border-color:       #9DE1E4;
     margin:             0 0.5% 0.5% 0.5%;
     box-shadow:         2px 2px 8px #888888;
 }

@@ -1,12 +1,18 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  background: -webkit-linear-gradient(135deg, #69c8e7 0%, #49d3b4 100%);
+  background: -moz-linear-gradient(135deg, #69c8e7 0%, #49d3b4 100%);
+  background: -o-linear-gradient(135deg, #69c8e7 0%, #49d3b4 100%);
+  background: -ms-linear-gradient(135deg, #69c8e7 0%, #49d3b4 100%);
+  background: linear-gradient(-45deg, #69c8e7 0%, #49d3b4 100%); }
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  margin: 20px auto;
+  margin: 20px auto !important;
   margin-bottom: 0px;
-  background-color: #CCCCCC;
-  background-image: url("../images/GreyBlueBG210215.png");
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: center; }
+  background-color: transparent !important;
+  background: transparent;
+  filter: Alpha(opacity=0); }
 
 /*-------FOOTER-----------*/
 footer {
