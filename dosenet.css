@@ -1,0 +1,135 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 20px auto;
+  margin-bottom: 0px;
+  background-color: #CCCCCC;
+  background-image: url("images/GreyBlueBG210215.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center; }
+
+img {
+  /* Social buttons/images */ }
+  img.logo-dosenet {
+    margin: 4em 0 0 2em; }
+  img.button:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier shit*/ }
+  img.button {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    /* For IE8 and earlier shit*/
+    height: 32px; }
+
+/*-------FOOTER-----------*/
+footer {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 1; }
+
+span.label-default {
+  margin-left: 10px; }
+
+div.jumbotron {
+  margin: 1%;
+  border-radius: 10px; }
+div.gmnoprint, div.gm-style-cc {
+  visibility: hidden; }
+
+#main-area {
+  background-image: none;
+  background: gray; }
+
+#map-canvas {
+  width: 99%;
+  min-height: 65vh;
+  margin: 0 0.5% 1% 0.5%; }
+
+#dosimeter_list {
+  padding: 0.5em;
+  margin-left: 1em;
+  width: 100%; }
+
+.jh5 {
+  padding: 0.5em 0 0 0;
+  font-size: 2em;
+  text-align: center; }
+
+.jh2 {
+  font-size: 3em; }
+
+.jp {
+  padding: 1vw;
+  font-size: 1.2em;
+  text-align: center; }
+
+.header-text {
+  font-size: 2vw;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+.names {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #D19000; }
+
+.reddot {
+  height: 1.5em;
+  margin-top: 0.5em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.plot {
+  width: 100%;
+  min-height: 35em; }
+
+.center {
+  text-align: center; }
+
+.vcenteralign {
+  vertical-align: center; }
+
+.transbg {
+  background-color: transparent; }
+
+.dropdown {
+  margin: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
+.roundedwrapper {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 0.5em;
+  border: 2px solid;
+  border-color: #CED1D4;
+  margin: 0.5%; }
+
+.paddingtop {
+  padding-top: 1em; }
+
+.paddingright {
+  padding-right: 1em; }
+
+.labels {
+  background-color: #ffffff;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 110%; }
+
+.label-info {
+  background-color: #5bc0de; }
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em; }
+
+/*# sourceMappingURL=dosenet.css.map */
