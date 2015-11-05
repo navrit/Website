@@ -17,8 +17,7 @@ var selected_marker = '';
 var selected_val = '';
 
 function https(){
-	var URL = document.URL;
-	var secureURL = URL.replace("http:","https:");
+	var secureURL = document.URL.replace("http:","https:");
 }
 
 function centerMap(center){
@@ -135,7 +134,7 @@ function getLabelContent(val){
 	selected_unit = getDoseUnit();
 	switch(selected_unit) {
 		case 'CPM':
-			latest_val = (val.properties["Latest dose (CPM)"]).toFixed(4);
+			latest_val = (val.properties["Latest dose (CPM)"]).toFixed(1);
 			break;
 		case 'REM':
 			selected_unit = 'mrem/hr'
@@ -143,7 +142,7 @@ function getLabelContent(val){
 			break;
 		case 'USV':
 			selected_unit = '&microSv/hr'
-			latest_val = (val.properties["Latest dose (&microSv/hr)"]).toFixed(4);
+			latest_val = (val.properties["Latest dose (&microSv/hr)"]).toFixed(3);
 			break;
 		case 'plane':
 			selected_unit = 'plane hrs'
