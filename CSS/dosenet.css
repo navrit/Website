@@ -99,6 +99,8 @@ td#displayunits {
   width: 150px; }
 td#timeframe {
   width: 110px; }
+td#dosimeter_list {
+  width: 200px; }
 
 #map-canvas {
   width: 99%;
@@ -106,9 +108,8 @@ td#timeframe {
   margin: 0 0.5% 1% 0.5%; }
 
 #dosimeter_list {
-  padding: 0.5em;
-  margin-left: 1em;
-  width: 100%; }
+  padding: 0.2em;
+  margin-left: 1em; }
 
 .header-text {
   font-size: 2vw;
