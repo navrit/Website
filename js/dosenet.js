@@ -197,7 +197,7 @@ $(document).ready(function(){
 		// key: position of item in the array Features
 		// val: value of item
 		$.each(data.features, function(key, val){
-			$("#dosimeter_list").append($("<option />").text(val.properties["Name"]));
+			$("#dosimeter_dropdown").append($("<option />").text(val.properties["Name"]));
 			var lon = getCoords(val).lon;
 			var lat = getCoords(val).lat;
 	        var marker = new MarkerWithLabel({
