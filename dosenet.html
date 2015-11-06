@@ -23,20 +23,20 @@
 	<div class="roundedwrapper">
 		<table class="center "style="float: left;">
 			<tr>
-    			<td class="paddingright">
+    		<td id="displayunits">
 					<div class="label label-info">
 						Units to Display on Plots
 					</div>
 					<select id="dose_dropdown" class="dropdown" onChange='changeDoseUnits()'>
-						<option value="CPM"> CPM </option>
-						<option value="REM"> mrem per Hour </option>
 						<option value="USV"> µSv per Hour </option>
+						<option value="REM"> mrem per Hour </option>
+						<option value="CPM"> CPM </option>
 						<option value="plane"> Hours on a plane </option>
 						<option value="medical"> X-rays </option>
 						<option value="cigarette"> Cigarettes </option>
 					</select>
 				</td>
-				<td>
+				<td id="timeframe">
 					<span class="glyphicon glyphicon-time"></span>
 					<div class="label label-info">
 						Timeframe

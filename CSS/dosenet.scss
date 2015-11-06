@@ -13,11 +13,11 @@ img {
 }
 
 div {
-    &.jumbotron{
-        margin:         1%;
-        border-radius:  10px;
+    &.jumbotron {
+        margin:           1%;
+        border-radius:    10px;
         background-color: rgba(255, 255, 255, 0.7);
-        box-shadow:         2px 2px 8px #888888;
+        box-shadow:       2px 2px 8px #888888;
     }
     &.gmnoprint, &.gm-style-cc {
         visibility: hidden;
@@ -43,6 +43,16 @@ button {
     }
 }
 
+td {
+  &#displayunits {
+    padding-right:  1em;
+    width: 150px;
+  }
+  &#timeframe {
+
+  }
+}
+
 #map-canvas {
     width:          99%;
     min-height:     65vh;
@@ -59,35 +69,35 @@ button {
     font-size:      2vw;
     font-family:    $font-stack;
 }
-.names{
+.names {
     font-family:    $font-stack;
     color:          #D19000;
 }
-.reddot{
+.reddot {
     height:             1.5em;
     margin-top:         0.5em;
     margin-left:        auto;
     margin-right:       auto;
 }
-.plot{
+.plot {
     width:              100%;
     min-height:         35em;
 }
-.center{
+.center {
     text-align:         center;
 }
-.vcenteralign{
+.vcenteralign {
     vertical-align:     center;
 }
-.transbg{
+.transbg {
     background-color:   transparent;
 }
-.dropdown{
+.dropdown {
     margin:             auto;
     margin-top:         0.5em;
     margin-bottom:      0.5em;
 }
-.roundedwrapper{
+.roundedwrapper {
     background-color:   rgba(255,255,255,0.4);
     border-radius:      10px;
     padding:            0.5em;
@@ -99,11 +109,9 @@ button {
 .paddingtop{
     padding-top:    1em;
 }
-.paddingright{
-    padding-right:  1em;
-}
+
 /*-------- LABELS ON GMAP ----------*/
-.labels{
+.labels {
 	background-color:      #ffffff;
 	-moz-border-radius:    5px;
 	border-radius:         5px;
