@@ -100,7 +100,7 @@ function getDosimeterCoords(index){
 }
 
 function getSelectedDosimeterIndex(){
-	var sel = document.getElementById('dosimeter_list');
+	var sel = document.getElementById('dosimeter_dropdown');
 	var index = sel.selectedIndex;
 	dosimeter_name = sel.options[sel.selectedIndex].value;
 	return index
