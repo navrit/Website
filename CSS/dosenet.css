@@ -94,6 +94,12 @@ div.p {
 button.btn, button.btn-info, button.btn-sm {
   font-size: 1.1em; }
 
+td#displayunits {
+  padding-right: 1em;
+  width: 150px; }
+td#timeframe {
+  width: 110px; }
+
 #map-canvas {
   width: 99%;
   min-height: 65vh;
@@ -147,9 +153,6 @@ button.btn, button.btn-info, button.btn-sm {
 
 .paddingtop {
   padding-top: 1em; }
-
-.paddingright {
-  padding-right: 1em; }
 
 /*-------- LABELS ON GMAP ----------*/
 .labels {
