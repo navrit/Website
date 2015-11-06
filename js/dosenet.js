@@ -16,10 +16,6 @@ var graph_url = '';
 var selected_marker = '';
 var selected_val = '';
 
-function https(){
-	var secureURL = document.URL.replace("http:","https:");
-}
-
 function centerMap(center){
 	var mapCenter = new google.maps.LatLng(center[0], center[1]);
 	map.setCenter(mapCenter);
@@ -28,6 +24,9 @@ function centerMap(center){
 function updateInfowindowContent(val){
 	time = getTimeframe();
 	dose = getDoseUnit();
+	if( dose=='plane'||dose=='cigarette'||dose=='medical') {
+		dose = 'USV';
+	}
 	var plotly_url = "URL_" + dose + "_" + time;
 	var iframeIntro = "<iframe width=\"500\" height=\"400\" frameborder=\"0\" \
 		seamless=\"seamless\" scrolling=\"no\" src=\"";
@@ -157,7 +156,7 @@ function getLabelContent(val){
 			latest_val = (val.properties["Latest dose (&microSv/hr)"]*0.2).toFixed(4);
 			break;
 		default:
-			latest_val = (val.properties["Latest dose (CPM)"]).toFixed(1);
+			latest_val = (val.properties["Latest dose (&microSv/hr)"]).toFixed(3);
 			break;
 	}
 	return ("&nbsp" + latest_val + "&nbsp" + selected_unit + "&nbsp");
