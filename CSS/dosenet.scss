@@ -44,6 +44,12 @@ button {
     }
 }
 
+p {
+    &.about {
+        padding: 10%;
+    }
+}
+
 #control-panel {
     text-align: center;
 }
