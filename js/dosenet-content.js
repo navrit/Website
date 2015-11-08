@@ -1,29 +1,24 @@
 function units_used() {
     document.getElementById("text_field").innerHTML =
-        "<div class =\"jumbotron\" >" +
         "<div class =\"h5\">" +
             "Units Used" +
         "</div>" +
         "<div class =\"p\">" +
         "Background radiation is present everywhere. However, there are also many common, everyday human activities that expose you to radiation. The units used here are a sample of different sources of radiation in everyday activity and allow you to compare the background dose to these different activities. In these cases the dose stated corresponds to the effective dose equivalent for that exposure." +
-        "</div>" +
         "</div>"
     }
 function map_explained() {
     document.getElementById("text_field").innerHTML =
-        "<div class =\"jumbotron\" >" +
         "<div class =\"h5\">" +
             "How the map works" +
         "</div>" +
         "<div class =\"p\">" +
         "The map uses Google Maps with pinpoints at each dosimeter location. These dosimeters then update to show the current radiation level. Clicking on any of the points will bring up a new window, displaying more information about the individual detector and allow you to view the radiation level as a function of time. The units can be changed using the dropdown just above the map. These units show the background radiation level in terms of more familiar units." +
-        "</div>" +
         "</div>"
 }
 
 function about_radiation(){
     document.getElementById("text_field").innerHTML =
-        "<div class =\"jumbotron\" >" +
         "<div class =\"h5\">" +
             "The radiation level is higher today than it was yesterday. Should I be concerned?" +
         "</div>" +
@@ -43,19 +38,16 @@ function about_radiation(){
         "</div>" +
         "<div class =\"p\">" +
         "Different locations have different amounts of natural radiation background. The background in Denver, for example, is considerably higher compared to that at sea level. Some variation in background level is to be expected, just as different places have different weather." +
-        "</div>" +
         "</div>";
 }
 
 function about_dosenet(){
     document.getElementById("text_field").innerHTML =
-        "<div class =\"jumbotron\" >" +
         "<div class =\"h5\">" +
             "About the Devices" +
         "</div>" +
         "<div class =\"p\">" +
         "The DoseNet devices are radiation detectors placed throughout the UC Berkeley campus, Berkeley and the bay area more generally. These dosimeters measure the amount of radiation that enters the detector and deposits energy every minute. This value is then converted to a count rate and used to calculate the amount of dose that is exposed to people.  Each dosimeter then takes this measurement and sends it to a central server, where it is displayed on RadWatch.  This system is unique in that it allows for real-time monitoring of radiation levels." +
-        "</div>" +
         "</div>";
 }
 
@@ -72,7 +64,6 @@ function setHTML_units(){
     switch(unit) {
         case 'cigarette':
             document.getElementById("text_field").innerHTML =
-            "<div class =\"jumbotron\" >" +
             "<div class =\"h5\">" +
             "Cigarettes (1 pack (20 cigarettes) = 6 µSv)</a>" +
             "</div>" +
@@ -81,24 +72,20 @@ function setHTML_units(){
             "<br><br><a href=\"http://www.ncrponline.org/Learn_More/Did_You_Know_95.html\">Equivalent dose estimation</a>" +
             "...'greatest contributor to the effective population dose equivalent of all consumer products. In fact, tobacco products probably would have been the greatest single contributor to the effective population dose equivalent of all radiation sources, including natural background sources and medical radiation [NCRP Report No. 93 summarizing exposures from all sources (NCRP, 1987a)].'" +
             "<br><br>This unit compares the effective dose equivalent for how many cigarettes would give you the same dose per hour. <br><a href=\"http://www.rmeswi.com/36.html\">Radiation Measurement and Elimination Services</a>" +
-            "</div>" +
             "</div>";
         break;
         case 'plane':
             document.getElementById("text_field").innerHTML =
-            "<div class =\"jumbotron\" >" +
             "<div class =\"h5\">" +
             "Time on Airplane (2.38 µSv per hour)" +
             "</div>" +
             "<div class =\"p\">" +
             "Radiation also comes from the sun, solar wind, and other cosmic radiation. The bulk of this radiation is blocked by the Earth’s atmosphere. However, when flying across the country, the increased altitude means the air is thinner. With thinner air, there is less protection from this cosmic radiation. This means that while flying in an airplane, you receive a higher dose of radiation than you would on the ground." +
             "<br><br>This unit gives the amount of time on an airplane would correspond to the same effective dose. <br><a href=\"http://www.hps.org/publicinformation/ate/faqs/commercialflights.html\">HPS Public information</a>" +
-            "</div>" +
             "</div>";
         break;
         case 'medical':
             document.getElementById("text_field").innerHTML =
-            "<div class =\"jumbotron\">" +
             "<div class =\"h5\">" +
             "Medical Procedures (X-ray = 5 - 15 µSv, Chest CT = 7 mSv)" +
             "</div>" +
@@ -107,40 +94,33 @@ function setHTML_units(){
             "<br><br>The units here compare how many 5 µSv X-rays would need to be taken to give you the same effective dose as standing at this location for one hour." +
             "<br><a href=\"http://www.radiologyinfo.org/en/pdf/sfty_xray.pdf\">Radiology information</a>" +
             "<br><a href=\"http://www.nrc.gov/about-nrc/radiation/around-us/doses-daily-lives.html\">NRC - Daily lives</a>" +
-            "</div>"
             "</div>";
         break;
         case 'CPM':
             document.getElementById("text_field").innerHTML =
-            "<div class =\"jumbotron\">" +
             "<div class =\"h5\">" +
             "CPM" +
             "</div>" +
             "<div class =\"p\">" +
             "Counts per minute on that detector scaled from a 5 minute measurement time" +
-            "</div>" +
             "</div>";
         break;
         case 'REM':
             document.getElementById("text_field").innerHTML =
-            "<div class =\"jumbotron\">" +
             "<div class =\"h5\">" +
             "Millirem per hour (mREM/hr) - 1 mREM/hr = 10 µSv/hr" +
             "</div>" +
             "<div class =\"p\">" +
             "The millirem (equal to 1/1000th of a rem) is an older measurement of radiation dose that the Sievert replaced. It is still common  however, in the literature on radiation dose. Because of this, it is included in here as well. The mREM/hr unit is the dose rate - the dose absorbed per hour of exposure." +
-            "</div>" +
             "</div>";
         break;
         case 'USV':
         document.getElementById("text_field").innerHTML =
-            "<div class =\"jumbotron\">" +
             "<div class =\"h5\">" +
             "Micro-Sievert per hour (µSv/hr)" +
             "</div>" +
             "<div class =\"p\">" +
             "The Sievert is the standard (SI) unit of absorbed dose. It is related to the amount of energy that radiation deposits in the body. 1 Sv is defined as being 1 joule of energy that is absorbed in 1 kg of tissue. 1 µSv is equal to 10^-6 (0.000001) Sv. Sv/hr is the dose rate - the dose absorbed per hour of exposure." +
-            "</div>" +
             "</div>";
         break;
         default:
