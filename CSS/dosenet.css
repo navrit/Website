@@ -112,9 +112,9 @@ td#dosimeter_list {
   padding: 0.2em;
   margin-left: 1em; }
 
-.about-logos {
+img.about-logos {
   height: 128px;
-  margin: 0.5em; }
+  margin: 0.5em 5% 0.5em 5%; }
 
 .float-right {
   float: right;
