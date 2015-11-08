@@ -216,4 +216,18 @@ $(document).ready(function(){
 		var mcOptions = {gridSize: 40, maxZoom: 15};
 		markerCluster = new MarkerClusterer(map, markers, mcOptions);
 	});
+
+	//Magnific popup code
+	$('.image-link-1').magnificPopup({
+		items: {
+			src: 'images/Campolindo_visit_merged.jpg'
+		},
+		type:'image'
+	});
+	$('.image-link-2').magnificPopup({
+		items: {
+			src: 'images/Pinewood.jpg'
+		},
+		type:'image'
+	});
 });
