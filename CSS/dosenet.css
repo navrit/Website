@@ -116,6 +116,10 @@ td#dosimeter_list {
   padding: 0.2em;
   margin-left: 1em; }
 
+.float-right {
+  float: right;
+  margin-right: 0.5em; }
+
 .header-text {
   font-size: 2vw;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
