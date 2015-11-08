@@ -19,29 +19,41 @@
 	<div class="roundedwrapper">
 		<div class="btn-group float-right" role="group">
 			<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				More information
+				<span class="glyphicon glyphicon-info-sign"></span>
 				<span class="caret"></span>
 			</button>
-			<ul class="dropdown-menu">
-				<li><a href="#">About DoseNet</a></li>
-				<li><a href="#">Join DoseNet</a></li>
+			<ul class="dropdown-menu dropdown-menu-right">
+				<li>
+					<a href="#">
+						<span class="glyphicon glyphicon-question-sign"></span>
+						About
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="glyphicon glyphicon-heart"></span>
+						Join
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div class="btn-group float-right" role="group">
 			<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon-user"></span>
 				Partners
 				<span class="caret"></span>
 			</button>
-			<ul class="dropdown-menu">
-				<li><a href="#">Campolindo High School, CA</a></li>
-				<li><a href="#">Pinewood School, CA</a></li>
+			<ul class="dropdown-menu dropdown-menu-right">
+				<li><a href="#">Campolindo High School, Moraga, CA</a></li>
+				<li><a href="#">Pinewood School, Los Altos, CA</a></li>
 			</ul>
 		</div>
 		<table id="control-panel" style="float: left;">
 			<tr>
     			<td id="displayunits">
+					<span class="glyphicon glyphicon-cog"></span>
 					<div class="label label-info">
-						Units to Display on Plots
+						Units on Plots
 					</div>
 					<select id="dose_dropdown" class="dropdown" onChange='changeDoseUnits()'>
 						<option value="USV"> µSv per Hour </option>
@@ -65,6 +77,7 @@
 					</select>
 				</td>
 				<td id="dosimeter_list">
+					<span class="glyphicon glyphicon-map-marker"></span>
 					<div class="label label-info">
 						Dosimeter list
 					</div>
