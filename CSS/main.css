@@ -84,13 +84,14 @@ img.seals:hover {
   filter: alpha(opacity=100);
   /* For IE8 and earlier shit*/ }
 img.sealKent {
-  max-width: 80%;
   height: 50px;
   width: 78px; }
 img.sealCal {
-  /*max-width: 80%;*/
   height: 45px;
   width: 166px; }
+img.sealLBL {
+  height: 85px;
+  width: 100px; }
 img.seals {
   padding-bottom: 5px;
   vertical-align: middle;
