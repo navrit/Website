@@ -79,10 +79,16 @@ td {
 }
 
 img {
+    &.about-logos, &.about-logos-big {
+        margin:     3%;
+    }
     &.about-logos {
         height:     128px;
-        margin:     0.5em 5% 0.5em 5%;
     }
+    &.about-logos-big {
+        height:     256px;
+    }
+
 }
 
 .float-right {
