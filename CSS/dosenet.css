@@ -14,35 +14,63 @@ html {
   background: linear-gradient(to right, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
-  /* IE6-9 */ }
+  /* IE6-9 */
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
   margin: 20px auto !important;
   margin-bottom: 0px;
   background-color: transparent !important;
   background: transparent;
   filter: Alpha(opacity=0); }
 
-/*-------FOOTER-----------*/
-footer {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  z-index: 1;
-  margin-top: 3em; }
+.flex-container {
+  padding: 0 8px 10px 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  background: aliceblue; }
 
-ol.breadcrumb {
-  margin-bottom: 0 !important;
-  box-shadow: 1px 2px 10px #999999; }
+.flex-item {
+  background: transparent;
+  padding: 10px;
+  width: 50px;
+  height: 20px;
+  line-height: 10px;
+  text-align: center; }
 
 span.label-default {
   margin-left: 10px; }
+span.copyright {
+  margin-top: 13px;
+  margin-left: 12px; }
 
-nav.navbar-static-bottom {
-  margin-top: 2em;
-  margin-bottom: 0; }
+/* Large */
+.footer {
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  box-shadow: 0px 1px; }
 
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .footer {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around; } }
+/* Small screens */
+@media all and (max-width: 500px) {
+  .footer {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column; }
+
+  span.copyright {
+    margin-top: 20px; } }
 ul.list-group {
   margin-bottom: 0px; }
 
@@ -126,10 +154,10 @@ img.about-logos-big {
 
 .header-text {
   font-size: 2vw;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 .names {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #D19000; }
 
 .reddot {
