@@ -15,7 +15,8 @@ img {
 
 div {
     &.jumbotron {
-        margin:           1%;
+        max-width:        60em;
+        margin:           0.5% auto 4% auto;
         border-radius:    10px;
         background-color: rgba(255, 255, 255, 0.7);
         box-shadow:       2px 2px 8px #888888;
@@ -35,6 +36,34 @@ div {
         padding:    1vw;
         font-size:  1.2em;
         text-align: center;
+    }
+}
+
+.roundedwrapper {
+    background-color:   rgba(255,255,255,0.4);
+    border-radius:      10px;
+    padding:            0.5em;
+    border:             2px solid;
+    border-color:       #9DE1E4;
+    margin:             0 4% 0% 4%;
+    box-shadow:         2px 2px 8px #888888;
+}
+
+/* Medium ish screens */
+@media all and (max-width: 900px) {
+    div {
+        &.jumbotron {
+            margin:           0.5% 0 4% 0;
+            border-radius:    0px;
+            max-width:        none;
+        }
+    }
+    .roundedwrapper {
+        border-radius:      0px;
+        padding:            1em;
+        border:             0px;
+        margin:             0;
+        box-shadow:         2px 2px 8px #888888;
     }
 }
 
@@ -127,15 +156,6 @@ img {
     margin:             auto;
     margin-top:         0.5em;
     margin-bottom:      0.5em;
-}
-.roundedwrapper {
-    background-color:   rgba(255,255,255,0.4);
-    border-radius:      10px;
-    padding:            0.5em;
-    border:             2px solid;
-    border-color:       #9DE1E4;
-    margin:             0 0.5% 0.5% 0.5%;
-    box-shadow:         2px 2px 8px #888888;
 }
 .paddingtop{
     padding-top:    1em;
