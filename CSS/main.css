@@ -1,27 +1,16 @@
 html {
-  background: #93cede;
-  /* Old Browsers */
-  background: -moz-linear-gradient(left, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(left top, right top, color-stop(0%, #93cede), color-stop(41%, #75bdd1), color-stop(100%, #49a5bf));
-  /* Chrome, Safari4+ */
-  background: -webkit-linear-gradient(left, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
-  /* IE 10+ */
-  background: linear-gradient(to right, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
-  /* IE6-9 */
+  background: aliceblue;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; }
 
 body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
   background-color: transparent !important;
   background: transparent;
-  filter: Alpha(opacity=0); }
+  filter: Alpha(opacity=0);
+  height: 100%; }
+
+nav.navbar {
+  margin-bottom: 0px !important; }
 
 div.centre {
   margin: 0 10% 0 10%; }

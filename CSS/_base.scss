@@ -1,14 +1,7 @@
 $font-stack: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 html {
-	background: rgba(147,206,222,1); /* Old Browsers */
-	background: -moz-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);/* FF3.6+ */
- 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1))); /* Chrome, Safari4+ */
-	background: -webkit-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%); /* Chrome10+,Safari5.1+ */
- 	background: -o-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%); /* IE 10+ */
- 	background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);/* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );/* IE6-9 */
+	background: rgba(240,248,255,1);
 
 	font-family:           $font-stack !important;
 }
@@ -18,6 +11,13 @@ body {
 	background-color:	   transparent !important;
 	background:      	   rgba(0,0,0,0);
 	filter:				   Alpha(opacity = 0);
+	height:				   100%;
+}
+
+nav {
+	&.navbar {
+		margin-bottom:  0px !important;
+	}
 }
 
 div {
@@ -65,10 +65,9 @@ span {
 
 /* Large */
 .footer {
-  //display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  box-shadow: 1px -1px 4px aliceblue;
+	flex-flow: 	row wrap;
+	justify-content: flex-start;
+	box-shadow: 1px -1px 4px aliceblue;
 }
 
 /* Medium screens */
