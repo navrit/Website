@@ -2,13 +2,18 @@
 
 img {
     &.logo-dosenet {
-        margin:             4em 100% -0.1% 0;
+        margin:             4em auto -0.1% 0;
         padding:            1em;
         background-color:   rgba(255,255,255,0.6);
         border-radius:      4px;
-        border:             2px solid;
-        border-color:       #B8EDE4;
-        box-shadow:         2px 2px 8px #888888;
+        box-shadow:         2px 2px 8px #797979;
+    }
+    &.about-logos {
+        height:     128px;
+        margin:     0.5em;
+    }
+    &.about-logos-big {
+        max-width:     100%;
     }
 }
 
@@ -18,7 +23,7 @@ div {
         margin:           0.5% auto 4% auto;
         border-radius:    10px;
         background-color: rgba(255, 255, 255, 0.7);
-        box-shadow:       2px 2px 8px #888888;
+        box-shadow:       2px 2px 8px #797979;
     }
     &.gmnoprint, &.gm-style-cc {
         visibility: hidden;
@@ -36,16 +41,24 @@ div {
         font-size:  1.2em;
         text-align: center;
     }
+    &.panel-image {
+        padding:    1em;
+    }
+}
+
+h1 {
+    &.dosenet-title {
+        font-size:  7em;
+        margin:     5vw 0 5vw 40vw;
+    }
 }
 
 .roundedwrapper {
     background-color:   rgba(255,255,255,0.4);
     border-radius:      10px;
     padding:            0.5em;
-    border:             2px solid;
-    border-color:       #9DE1E4;
-    margin:             0 4% 0% 4%;
-    box-shadow:         2px 2px 8px #888888;
+    margin:             0 5% 0% 5%;
+    box-shadow:         2px 2px 8px #797979;
 }
 
 /* Medium ish screens */
@@ -62,7 +75,7 @@ div {
         padding:            1em;
         border:             0px;
         margin:             0;
-        box-shadow:         2px 2px 8px #888888;
+        box-shadow:         2px 2px 8px #797979;
     }
 }
 
@@ -74,7 +87,8 @@ button {
 
 p {
     &.about {
-        padding: 10%;
+        padding:     7%;
+        font-family: sans-serif;
     }
 }
 
@@ -106,58 +120,19 @@ td {
     margin-left:    1em;
 }
 
-img {
-    &.about-logos, &.about-logos-big {
-        margin:     3%;
-    }
-    &.about-logos {
-        height:     128px;
-    }
-    &.about-logos-big {
-        height:     256px;
-    }
-
-}
-
 .float-right {
     float:          right;
     margin-right:   0.5em;
 }
 
-.header-text {
-    font-size:      2vw;
-    font-family:    $font-stack;
-}
-.names {
-    font-family:    $font-stack;
-    color:          #D19000;
-}
-.reddot {
-    height:             1.5em;
-    margin-top:         0.5em;
-    margin-left:        auto;
-    margin-right:       auto;
-}
-.plot {
-    width:              100%;
-    min-height:         35em;
-}
 .center {
     text-align:         center;
 }
-.vcenteralign {
-    vertical-align:     center;
-}
-.transbg {
-    background-color:   transparent;
-}
+
 .dropdown {
     margin:             auto;
     margin-top:         0.5em;
     margin-bottom:      0.5em;
-}
-.paddingtop{
-    padding-top:    1em;
 }
 
 /*-------- LABELS ON GMAP ----------*/

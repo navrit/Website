@@ -5,15 +5,11 @@
 }
 
 div {
-	&.row {
-		//margin-left: 	0;
-		//margin-right: 	0;
+	&.panel {
+		box-shadow: 1px 2px 10px #797979;
 	}
 	&.tile {
 		box-shadow: 1px 2px 10px #999999;
-	}
-	&.quartertile {
-		box-shadow: 	1px 2px 10px #999999;
 	}
 	&.maintile {
 		box-shadow: 		1px 2px 10px #999999;
