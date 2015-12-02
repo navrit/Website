@@ -8,11 +8,16 @@ img {
         border-radius:      4px;
         box-shadow:         2px 2px 8px #797979;
     }
-    &.about-logos {
-        height:     128px;
+    &.about-logos, &.about-people, &.about-big {
         margin:     0.5em;
     }
-    &.about-logos-big {
+    &.about-logos {
+        width:      128px;
+    }
+    &.about-people {
+        width:      160px;
+    }
+    &.about-big {
         max-width:     100%;
     }
 }
@@ -49,7 +54,7 @@ div {
 h1 {
     &.dosenet-title {
         font-size:  7em;
-        margin:     5vw 0 5vw 40vw;
+        margin:     5vw 0 5vw 33vw;
     }
 }
 

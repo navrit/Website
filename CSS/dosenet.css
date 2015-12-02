@@ -83,10 +83,13 @@ img.logo-dosenet {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   box-shadow: 2px 2px 8px #797979; }
-img.about-logos {
-  height: 128px;
+img.about-logos, img.about-people, img.about-big {
   margin: 0.5em; }
-img.about-logos-big {
+img.about-logos {
+  width: 128px; }
+img.about-people {
+  width: 160px; }
+img.about-big {
   max-width: 100%; }
 
 div.jumbotron {
@@ -112,7 +115,7 @@ div.panel-image {
 
 h1.dosenet-title {
   font-size: 7em;
-  margin: 5vw 0 5vw 40vw; }
+  margin: 5vw 0 5vw 33vw; }
 
 .roundedwrapper {
   background-color: rgba(255, 255, 255, 0.4);

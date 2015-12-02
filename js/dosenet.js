@@ -1,11 +1,17 @@
+try {
+        var infowindow = new google.maps.InfoWindow();
+    }
+    catch(err) {
+        console.log("Couldn't make a Google Map. Error is " + err);
+    }
+
 var map; // Google Map Object
 var berkeley = [37.872269, -122.258901];
 var markers = [];
 var markerCluster;
 var marks = [];
-var infowindow = new google.maps.InfoWindow();
 // url for geoJSON file
-var url = 'output.geojson?'
+var url = '/output.geojson?'
 	+ Math.random().toString(36).replace(/[^a-z]+/g, ''); // To solve browser caching issue
 var json = $($.parseJSON(JSON.stringify($.getJSON(url))));
 var parsed_json = '';
@@ -215,19 +221,5 @@ $(document).ready(function(){
 		addTimeDropdownListener();
 		var mcOptions = {gridSize: 40, maxZoom: 15};
 		markerCluster = new MarkerClusterer(map, markers, mcOptions);
-	});
-
-	//Magnific popup code
-	$('.image-link-1').magnificPopup({
-		items: {
-			src: 'images/Campolindo_visit_merged.jpg'
-		},
-		type:'image'
-	});
-	$('.image-link-2').magnificPopup({
-		items: {
-			src: 'images/Pinewood.jpg'
-		},
-		type:'image'
 	});
 });
