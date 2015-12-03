@@ -8,17 +8,11 @@ div {
 	&.panel {
 		box-shadow: 1px 2px 10px #797979;
 	}
-	&.tile {
-		box-shadow: 1px 2px 10px #999999;
-	}
-	&.maintile {
-		box-shadow: 		1px 2px 10px #999999;
-		background-color:	#FFFFFF;
-		max-width: 			20em;
-		padding: 			10px 5px 8px 10px;
-	}
-	&.kent {
-		margin-top: 		8em;
+}
+
+h3 {
+	&.panel-title {
+		font-size: 24px !important;
 	}
 }
 
