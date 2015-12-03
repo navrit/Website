@@ -15,6 +15,10 @@ nav.navbar {
 div.centre {
   margin: 0 10% 0 10%; }
 
+p.about {
+  padding: 7%;
+  font-family: sans-serif; }
+
 .flex-container {
   padding: 0 8px 10px 0;
   margin: 0;
@@ -139,10 +143,6 @@ h1.dosenet-title {
     box-shadow: 2px 2px 8px #797979; } }
 button.btn, button.btn-info, button.btn-sm {
   font-size: 1.1em; }
-
-p.about {
-  padding: 7%;
-  font-family: sans-serif; }
 
 #control-panel {
   text-align: center; }
