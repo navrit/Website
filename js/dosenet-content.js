@@ -23,21 +23,21 @@ function about_radiation(){
             "The radiation level is higher today than it was yesterday. Should I be concerned?" +
         "</div>" +
         "<div class =\"p\">" +
-        "Probably not. In the same way that some days are windy and other days are calm, the background radiation level can change from day to day. What matters more than the dose each day is the overall trend in the dose over time." +
-        "<br><a href=\"http://www.epa.gov/radiation/understand/perspective.html\">EPA - Understand perspective</a>" +
+            "Probably not. In the same way that some days are windy and other days are calm, the background radiation level can change from day to day. What matters more than the dose each day is the overall trend in the dose over time." +
+            "<br><a href=\"http://www.epa.gov/radiation/understand/perspective.html\">EPA - Understand perspective</a>" +
         "</div>" +
 
         "<div class =\"h5\">" +
             "Will I be okay from receiving radiation?" +
         "</div>" +
         "<div class =\"p\">" +
-        "Very likely. Just as skin heals after a sunburn, the human body has ways of dealing with small amounts of radiation. Life on earth has existed with this background radiation for a very long time. In the same way life has adapted to sunlight, life has adopted to background radiation; it is a part of life and our bodies have mechanisms for repairing the damage that small doses cause." +
+            "Very likely. Just as skin heals after a sunburn, the human body has ways of dealing with small amounts of radiation. Life on earth has existed with this background radiation for a very long time. In the same way life has adapted to sunlight, life has adopted to background radiation; it is a part of life and our bodies have mechanisms for repairing the damage that small doses cause." +
         "</div>" +
         "<div class =\"h5\">" +
             "The area where I live seems higher than other areas, should I be concerned?" +
         "</div>" +
         "<div class =\"p\">" +
-        "Different locations have different amounts of natural radiation background. The background in Denver, for example, is considerably higher compared to that at sea level. Some variation in background level is to be expected, just as different places have different weather." +
+            "Different locations have different amounts of natural radiation background. The background in Denver, for example, is considerably higher compared to that at sea level. Some variation in background level is to be expected, just as different places have different weather." +
         "</div>";
 }
 
@@ -47,7 +47,7 @@ function about_dosenet(){
             "About the Devices" +
         "</div>" +
         "<div class =\"p\">" +
-        "The DoseNet devices are radiation detectors placed throughout the UC Berkeley campus, Berkeley and the bay area more generally. These dosimeters measure the amount of radiation that enters the detector and deposits energy every minute. This value is then converted to a count rate and used to calculate the amount of dose that is exposed to people.  Each dosimeter then takes this measurement and sends it to a central server, where it is displayed on RadWatch.  This system is unique in that it allows for real-time monitoring of radiation levels." +
+            "The DoseNet devices are radiation detectors placed in the UC Berkeley campus, Berkeley, the Bay Area and beyond. These dosimeters measure the amount of radiation that enters the detector and deposits energy every minute. This value is then converted to a count rate and used to calculate the amount of dose that is exposed to people. Each dosimeter then takes this measurement and sends it to a central server, where it is displayed on RadWatch. This system is unique in that it allows for real-time monitoring of radiation levels." +
         "</div>";
 }
 
