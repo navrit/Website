@@ -1,9 +1,8 @@
 try {
-        var infowindow = new google.maps.InfoWindow();
-    }
-    catch(err) {
-        console.log("Couldn't make a Google Map. Error is " + err);
-    }
+    var infowindow = new google.maps.InfoWindow();
+} catch(err) {
+    console.log("Couldn't make a Google Map. Error is " + err);
+}
 
 var map; // Google Map Object
 var berkeley = [37.872269, -122.258901];
@@ -27,18 +26,68 @@ function centerMap(center){
 	map.setCenter(mapCenter);
 }
 
+// These two functions should be temporary until this can be done in makeGeoJSON as we phase out plot.ly
+function getURL(val){
+    var name = val.properties["Name"];
+    var url = '//radwatch.berkeley.edu/sites/default/files/dosenet/';
+    var random_string = Math.random().toString(36).replace(/[^a-z]+/g, '');
+    switch(name) {
+        case 'LBL':
+            url += 'lbl.csv?' + random_string;
+        break;
+        case 'Campolindo High School':
+            url += 'campolindo.csv?' + random_string;
+        break;
+        case 'Pinewood High School':
+            url += 'pinewood.csv?' + random_string;
+        break;
+        case 'Etcheverry Hall':
+            url += 'etch.csv?' + random_string;
+        break;
+        case 'Etcheverry Hall Roof':
+            url += 'etch_roof.csv?' + random_string;
+        break;
+    }
+    return url;
+}
+function getName(val){
+    var name = val.properties["Name"];
+    var short_name = 'NONAME';
+    switch(name) {
+        case 'LBL':
+            short_name = 'LBL';
+        break;
+        case 'Campolindo High School':
+            short_name = 'Campolindo';
+        break;
+        case 'Pinewood High School':
+            short_name = 'Pinewood';
+        break;
+        case 'Etcheverry Hall':
+            short_name = 'Etcheverry Hall';
+        break;
+        case 'Etcheverry Hall Roof':
+            short_name = 'Etcheverry Roof';
+        break;
+    }
+    return short_name;
+}
+
 function updateInfowindowContent(val){
 	time = getTimeframe();
 	dose = getDoseUnit();
+    url = getURL(val);
+    name = getName(val);
+
 	if( dose=='plane'||dose=='cigarette'||dose=='medical') {
 		dose = 'USV';
 	}
 	var plotly_url = "URL_" + dose + "_" + time;
-	var iframeIntro = "<iframe width=\"500\" height=\"400\" frameborder=\"0\" \
-		seamless=\"seamless\" scrolling=\"no\" src=\"";
-	var iframeEnding = ".embed?width=500&height=400\"></iframe>";
-	graph_url = val.properties[plotly_url.toString()];
-	return iframeIntro + graph_url + iframeEnding;
+
+    var node_name = dose + '_' + time + '_' + name;
+    var content_string = '<div id="' + node_name + '"" style="width:500px; height=400px"></div>';
+    get_data(url.toString(),name.toString(),dose,time,node_name);
+    return content_string;
 }
 
 // Time units for a plot, called in updateInfowindowContent
