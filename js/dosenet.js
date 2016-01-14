@@ -1,8 +1,8 @@
-try {
+/*try {
     var infowindow = new google.maps.InfoWindow();
 } catch(err) {
     console.log("Couldn't make a Google Map. Error is " + err);
-}
+}*/
 
 var map; // Google Map Object
 var berkeley = [37.872269, -122.258901];
@@ -73,7 +73,7 @@ function getName(val){
     return short_name;
 }
 
-function updateInfowindowContent(val){
+/*function updateInfowindowContent(val){
 	time = getTimeframe();
 	dose = getDoseUnit();
     url = getURL(val);
@@ -88,11 +88,11 @@ function updateInfowindowContent(val){
     var content_string = '<div id="' + node_name + '"" style="width:500px; height=400px"></div>';
     get_data(url.toString(),name.toString(),dose,time,node_name);
     return content_string;
-}
+}*/
 
 // Time units for a plot, called in updateInfowindowContent
 function getTimeframe(){
-	infowindow.close();
+	//infowindow.close();
 	var sel_time = document.getElementById('time_dropdown');
 	return sel_time.options[sel_time.selectedIndex].value;
 }
@@ -104,11 +104,11 @@ function getDoseUnit(){
 }
 
 function clearMarkers() {
-  markerCluster.clearMarkers();
-  for (var i = 0; i < markers.length; i++) {
-    markers[i].setMap(null);
-  }
-  markers = [];
+    markerCluster.clearMarkers();
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(null);
+    }
+    markers = [];
 }
 
 function setMarkerIcon(marker){
@@ -131,15 +131,15 @@ function repopulateMarkers(){
 	        });
 	        markers.push(marker);
 	        setMarkerIcon(marker);
-			addMarkerEventListeners(val, marker);
+			//addMarkerEventListeners(val, marker);
       	});
 		markerCluster.addMarkers(markers);
 	});
 }
 
 function changeDoseUnits(){
-	infowindow.close();
-	infowindow.open(map, selected_marker);
+	//infowindow.close();
+	//infowindow.open(map, selected_marker);
 	clearMarkers();
 	setHTML_units();
 	selected_unit = getDoseUnit();
@@ -161,7 +161,7 @@ function getSelectedDosimeterIndex(){
 }
 
 function goToDosimeter(){
-	infowindow.close();
+	//infowindow.close();
 	var index = getSelectedDosimeterIndex();
 	var center = getDosimeterCoords(index);
 	map.setCenter(center);
@@ -172,9 +172,9 @@ function initMap(){
 		zoom: 9,
 		disableDefaultUI: true
 	});
-	google.maps.event.addListener(map, 'click', function() {
+	/*google.maps.event.addListener(map, 'click', function() {
 		infowindow.close();
-	});
+	});*/
 }
 
 function getCoords(val){
@@ -217,7 +217,7 @@ function getLabelContent(val){
 	return ("&nbsp" + latest_val + "&nbsp" + selected_unit + "&nbsp");
 }
 
-function addMarkerEventListeners(val, marker){
+/*function addMarkerEventListeners(val, marker){
 	// Adds listener to open infowindow with content from updateInfowindowContent()
 	// updateInfowindowContent() will allow you to enter the graphs from the geoJSON file
 	google.maps.event.addListener(marker, 'click', (function(marker) {
@@ -228,14 +228,14 @@ function addMarkerEventListeners(val, marker){
 			selected_marker = marker;
 		};
 	})(marker));
-}
+}*/
 
 function addTimeDropdownListener(){
 	$("#time_dropdown").change(function(){
 		//infowindow.close();
 		goToDosimeter();
-		infowindow.setContent(updateInfowindowContent(selected_val));
-		infowindow.open(map, selected_marker);
+		//infowindow.setContent(updateInfowindowContent(selected_val));
+		//infowindow.open(map, selected_marker);
 	});
 }
 
@@ -265,7 +265,7 @@ $(document).ready(function(){
 	        });
 			markers.push(marker);
 	        setMarkerIcon(marker);
-			addMarkerEventListeners(val, marker);
+			//addMarkerEventListeners(val, marker);
       	});
 		addTimeDropdownListener();
 		var mcOptions = {gridSize: 40, maxZoom: 15};
