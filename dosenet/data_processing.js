@@ -112,8 +112,7 @@ function process_csv(text,dose,time) {
     data_input = average_data(raw_data,sample_size,scale);
 }
 
-function average_data(raw_data,sample_size,scale)
-{
+function average_data(raw_data,sample_size,scale) {
     var averaged_data = [];
     for(n=0; n < Math.floor(raw_data.length/sample_size); n++){
         sub_data = raw_data.slice(n*sample_size,(n+1)*sample_size);
