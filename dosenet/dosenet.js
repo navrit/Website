@@ -188,30 +188,30 @@ function getLabelContent(val){
 	selected_unit = getDoseUnit();
 	switch(selected_unit) {
 		case 'CPM':
-			latest_val = (val.properties["Latest dose (CPM)"]).toFixed(1);
+			latest_val = (val.properties["CPM"]).toFixed(1);
 			break;
 		case 'REM':
 			selected_unit = 'mrem/hr'
-			latest_val = (val.properties["Latest dose (mREM/hr)"]).toFixed(4);
+			latest_val = (val.properties["mREM/hr"]).toFixed(4);
 			break;
 		case 'USV':
 			selected_unit = '&microSv/hr'
-			latest_val = (val.properties["Latest dose (&microSv/hr)"]).toFixed(3);
+			latest_val = (val.properties["&microSv/hr"]).toFixed(3);
 			break;
 		case 'plane':
 			selected_unit = 'plane hrs'
-			latest_val = (val.properties["Latest dose (&microSv/hr)"]*0.420168067).toFixed(4);
+			latest_val = (val.properties["&microSv/hr"]*0.420168067).toFixed(4);
 			break;
 		case 'cigarette':
 			selected_unit = 'cigarettes/hr'
-			latest_val = (val.properties["Latest dose (&microSv/hr)"]*0.00833333335).toFixed(4);
+			latest_val = (val.properties["&microSv/hr"]*0.00833333335).toFixed(4);
 			break;
 		case 'medical':
 			selected_unit = 'X-Rays/hr'
-			latest_val = (val.properties["Latest dose (&microSv/hr)"]*0.2).toFixed(4);
+			latest_val = (val.properties["&microSv/hr"]*0.2).toFixed(4);
 			break;
 		default:
-			latest_val = (val.properties["Latest dose (&microSv/hr)"]).toFixed(3);
+			latest_val = (val.properties["&microSv/hr"]).toFixed(3);
 			break;
 	}
 	return ("&nbsp" + latest_val + "&nbsp" + selected_unit + "&nbsp");
