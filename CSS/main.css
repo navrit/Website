@@ -24,13 +24,14 @@ hr {
   border-top: 1px solid #aaaaaa !important;
   border-bottom: 1px solid #ffffff; }
 
-nav.navbar {
-  margin-bottom: 0px !important; }
-
 div.centre {
   margin: 0 10% 0 10%; }
 div#footer {
   background-color: rgba(255, 255, 255, 0.4); }
+div.card.large {
+  max-width: 500px; }
+div.row {
+  margin: 2em; }
 
 p.about {
   padding: 7%;
@@ -64,7 +65,17 @@ span.copyright {
   background-color: #3F51B5;
   border-radius: 6px;
   box-shadow: 1px 1px 2px grey;
-  padding-top: 5px; }
+  padding-top: 5px;
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em; }
 
 /* Large */
 .footer {
@@ -133,7 +144,5 @@ img.seals {
   opacity: 0.9;
   filter: alpha(opacity=90);
   /* For IE8 and earlier shit*/ }
-
-/*------------------------*/
 
 /*# sourceMappingURL=main.css.map */

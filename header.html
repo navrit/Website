@@ -1,15 +1,41 @@
-<!--META -->
-<meta http-equiv="last-modified" content="2016-04-08 11:05 BST" /
+<meta http-equiv="last-modified" content="2016-04-26 23:45 BST" /
 <meta name="copyright" content="© 2015 Navrit Bal" />
 <meta name="author" content="Navrit Bal" />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 <meta name="googlebot" content="snippet,follow" />
 <meta name="robots" content="index,follow" />
-<!--Title -->
 <title> navrit.com </title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 <link href='/CSS/Roboto.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="/" class="brand-logo">&nbsp; Navrit Bal</a>
+        <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/academic.html">Academic</a></li>
+            <li><a href="/dosenet.html">DoseNet</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/academic.html">Academic</a></li>
+            <li><a href="/dosenet.html">DoseNet</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    $(document).ready(function(){
+        $(".button-collapse").sideNav();
+    });
+</script>
+
+<!--
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -35,3 +61,4 @@
         </div>
     </div>
 </nav>
+!-->
