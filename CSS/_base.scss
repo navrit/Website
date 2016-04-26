@@ -1,9 +1,8 @@
 $font-stack: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 html {
-	background: rgba(240,248,255,1);
-
-	font-family:           $font-stack !important;
+	background: #CFD8DC;
+	font-family: $font-stack !important;
 }
 
 body {
@@ -40,6 +39,9 @@ div {
 	&.centre {
 		margin: 0 10% 0 10%;
 	}
+	&#footer {
+		background-color: rgba(255, 255, 255, .4);
+	}
 }
 
 p {
@@ -62,7 +64,6 @@ p {
 
 	-webkit-flex-flow: row wrap;
 	justify-content: space-around;
-	background: aliceblue;
 }
 
 .flex-item {
@@ -75,7 +76,6 @@ p {
 	text-align:	 center;
 }
 
-
 span {
 	&.label-default {
 		margin-left: 	10px;
@@ -83,14 +83,20 @@ span {
 	&.copyright {
 		margin-top: 13px;
 		margin-left: 12px;
+		background-color: #3F51B5;
+    	border-radius: 6px;
+    	box-shadow: 1px 1px 2px grey;
+    	padding-top: 5px;
 	}
 }
 
 /* Large */
 .footer {
-	flex-flow: 	row wrap;
+	flex-flow: row wrap;
 	justify-content: flex-start;
-	box-shadow: 1px -1px 4px aliceblue;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Medium screens */
@@ -114,7 +120,6 @@ span {
   	}
   }
 }
-
 
 ul {
 	&.list-group {

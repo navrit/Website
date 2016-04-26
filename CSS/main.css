@@ -1,5 +1,5 @@
 html {
-  background: aliceblue;
+  background: #CFD8DC;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; }
 
 body {
@@ -29,6 +29,8 @@ nav.navbar {
 
 div.centre {
   margin: 0 10% 0 10%; }
+div#footer {
+  background-color: rgba(255, 255, 255, 0.4); }
 
 p.about {
   padding: 7%;
@@ -44,8 +46,7 @@ p.about {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-  background: aliceblue; }
+  justify-content: space-around; }
 
 .flex-item {
   background: transparent;
@@ -59,13 +60,19 @@ span.label-default {
   margin-left: 10px; }
 span.copyright {
   margin-top: 13px;
-  margin-left: 12px; }
+  margin-left: 12px;
+  background-color: #3F51B5;
+  border-radius: 6px;
+  box-shadow: 1px 1px 2px grey;
+  padding-top: 5px; }
 
 /* Large */
 .footer {
   flex-flow: row wrap;
   justify-content: flex-start;
-  box-shadow: 1px -1px 4px aliceblue; }
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto; }
 
 /* Medium screens */
 @media all and (max-width: 800px) {
