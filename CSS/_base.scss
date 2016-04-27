@@ -10,7 +10,13 @@ body {
 	background-color:	   transparent !important;
 	background:      	   rgba(0,0,0,0);
 	filter:				   Alpha(opacity = 0);
-	height:				   100%;
+	display: 			   flex;
+    min-height: 		   100vh;
+    flex-direction: 	   column;
+}
+
+main {
+	flex: 1 0 auto;
 }
 
 hr {
@@ -152,4 +158,27 @@ img {
 		height:		   24px;
 		width:		   24px;
     }
+}
+
+/* This parent can be any width and height */
+.block-text {
+  text-align: center;
+  /* May want to do this if there is risk the container may be narrower than the element inside */
+  //white-space: nowrap;
+}
+
+/* The ghost, nudged to maintain perfect centering */
+.block-text:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can also be of any width and height */
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 600px;
 }
