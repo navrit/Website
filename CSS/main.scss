@@ -1,5 +1,9 @@
 @import 'base';
 
+$g-blue: #2196F3;
+$g-blue-d1: #1E88E5;
+$g-blue-d2: #1976D2;
+
 #topspacer{
 	margin-top: 4em;
 }
@@ -42,4 +46,18 @@ img {
 		opacity: 	0.9;
 		filter: 	alpha(opacity=90); /* For IE8 and earlier shit*/
 	}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes blue-card {
+    0%   {background-color:$g-blue;}
+	50% {background-color:$g-blue-d2;}
+    100% {background-color:$g-blue;}
+}
+
+/* Standard syntax */
+@keyframes blue-card {
+    0%   {background-color:$g-blue;}
+	50% {background-color:$g-blue-d2;}
+    100% {background-color:$g-blue;}
 }

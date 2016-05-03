@@ -170,4 +170,21 @@ img.seals {
   filter: alpha(opacity=90);
   /* For IE8 and earlier shit*/ }
 
+/* Chrome, Safari, Opera */
+@-webkit-keyframes blue-card {
+  0% {
+    background-color: #2196F3; }
+  50% {
+    background-color: #1976D2; }
+  100% {
+    background-color: #2196F3; } }
+/* Standard syntax */
+@keyframes blue-card {
+  0% {
+    background-color: #2196F3; }
+  50% {
+    background-color: #1976D2; }
+  100% {
+    background-color: #2196F3; } }
+
 /*# sourceMappingURL=main.css.map */
